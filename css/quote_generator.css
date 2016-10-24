@@ -1,0 +1,75 @@
+
+body {
+	background-image: url('../redwoods.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title {
+	text-align: center;
+	font-size: 50px;
+	color: #E6F9F3;
+	margin-top: 50px;
+	font-family: cursive;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.center {
+	text-align: center;
+}
+
+.quote-box {
+	text-align: center;
+	background-color: #60794A;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 50px 10px 20px 10px;
+
+}
+
+.quote-button {
+	margin: 10px 10px 10px 10px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align: left;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+button {
+	width: 110px;
+	background-color: #E6F9F3;
+}
+
+.footer {
+	text-align: center;
+	color: #E6F9F3;
+}
+
+footer {
+	text-align: right;
+}
+
+
