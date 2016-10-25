@@ -34,6 +34,7 @@ $(document).ready(function (){
 	window.alert("hello")
 	$.getJSON(quote_URL, getQuote);
 	$("#getQuoteButton").on("click", function (){
+		window.alert("quote clicked")
 		$.getJSON(quote_URL, getQuote);
 	});
 });
