@@ -37,4 +37,7 @@ $(document).ready(function (){
 		window.alert("quote clicked")
 		$.getJSON(quote_URL, getQuote);
 	});
+	$("#tweetQuoteButton").on("click", function (){
+		window.alert("Tweet quote clicked")
+	});
 });
