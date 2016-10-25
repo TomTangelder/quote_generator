@@ -7,6 +7,7 @@ var getQuote = function(json) {
 	//console.log(json)
 	//console.log(json.quoteText)
 	//console.log(json.quoteAuthor)
+	window.alert("I'm here in getQuote")
 	quote = {
 		'quoteText': json.quoteText,
 		'quoteAuthor': json.quoteAuthor
