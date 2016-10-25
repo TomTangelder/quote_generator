@@ -5,8 +5,8 @@ var quote = {}
 
 var getQuote = function(json) {
 	//console.log(json)
-	console.log(json.quoteText)
-	console.log(json.quoteAuthor)
+	//console.log(json.quoteText)
+	//console.log(json.quoteAuthor)
 	quote = {
 		'quoteText': json.quoteText,
 		'quoteAuthor': json.quoteAuthor
@@ -23,6 +23,8 @@ var getQuote = function(json) {
 	html += quote.quoteAuthor
 	html += "</footer>"
 	html += "</blockquote>"
+
+	window.alert(json.quoteText)
 
 	$('.quote-box').html(html);
 
