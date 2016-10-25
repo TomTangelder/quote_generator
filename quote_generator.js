@@ -31,6 +31,7 @@ var getQuote = function(json) {
 var quote_URL = 'http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
 
 $(document).ready(function (){
+	window.alert("hello")
 	$.getJSON(quote_URL, getQuote);
 	$("#getQuoteButton").on("click", function (){
 		$.getJSON(quote_URL, getQuote);
