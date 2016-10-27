@@ -1,11 +1,6 @@
-//var myVariable = 'Hello';
-//window.alert(myVariable);
-
 var quote = {}
 
 var getQuote = function(json) {
-	//console.log(json.quoteText)
-	//console.log(json.quoteAuthor)
 	quote = {
 		'quoteText': json.quoteText,
 		'quoteAuthor': json.quoteAuthor
@@ -35,6 +30,14 @@ $(document).ready(function (){
 		$.getJSON(quote_URL, getQuote);
 	});
 	$("#tweetQuoteButton").on("click", function (){
-		window.alert("Tweet quote clicked")
+		var textToTweet = quote.quoteText + " " + quote.quoteAuthor;
+		if (textToTweet.length > 140) {
+ 			alert('Tweet should be less than 140 Chars');
+ 		}
+ 		else {
+ 			var twtLink = 'http://twitter.com/home?status=' +encodeURIComponent(textToTweet);
+ 			window.open(twtLink,'_blank');
+ 		}
+
 	});
 });
